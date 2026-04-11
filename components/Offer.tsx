@@ -42,6 +42,19 @@ export default function Offer() {
         </div>
       </div>
 
+      {/* woman-grid: 実績グリッド */}
+      <div className="relative w-full h-48 md:h-64 mb-12 overflow-hidden border border-gold/20">
+        <Image src="/woman-grid.png" alt="実績一覧" fill className="object-cover object-top" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/30 to-transparent" />
+        <div className="absolute bottom-4 left-6 right-6 flex items-end justify-between">
+          <div>
+            <p className="label-en mb-1">Testimonials</p>
+            <p className="font-noto text-offwhite/70 text-xs tracking-wider">実際にプログラムを受けた方々（※モザイク処理済み）</p>
+          </div>
+        </div>
+      </div>
+
       {/* Benefits */}
       <div className="space-y-0">
         {benefits.map((b, i) => (

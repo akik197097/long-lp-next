@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const pains = [
   "アプローチしても、いつも「友達として」で終わる",
   "マッチングアプリで会えても、2回目に繋がらない",
@@ -29,18 +31,31 @@ export default function Problem() {
         "The more techniques you learn, the further you drift."
       </p>
 
-      {/* Pain points */}
-      <div className="space-y-0 mb-20">
-        {pains.map((text, i) => (
-          <div key={i} className="flex items-start gap-6 py-5 border-b border-gold/10 group hover:border-gold/30 transition-colors">
-            <span className="font-cormorant italic text-gold/40 text-2xl shrink-0 group-hover:text-gold/60 transition-colors">
-              {String(i + 1).padStart(2, "0")}
-            </span>
-            <p className="font-noto text-offwhite/70 text-base leading-relaxed tracking-wider group-hover:text-offwhite/90 transition-colors">
-              {text}
+      {/* Pain points + matchapp image */}
+      <div className="grid md:grid-cols-2 gap-12 items-start mb-20">
+        <div className="space-y-0">
+          {pains.map((text, i) => (
+            <div key={i} className="flex items-start gap-6 py-5 border-b border-gold/10 group hover:border-gold/30 transition-colors">
+              <span className="font-cormorant italic text-gold/40 text-2xl shrink-0 group-hover:text-gold/60 transition-colors">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <p className="font-noto text-offwhite/70 text-base leading-relaxed tracking-wider group-hover:text-offwhite/90 transition-colors">
+                {text}
+              </p>
+            </div>
+          ))}
+        </div>
+        {/* Matchapp screenshot */}
+        <div className="relative h-72 md:h-full min-h-[280px] overflow-hidden border border-gold/20">
+          <Image src="/matchapp.png" alt="マッチングアプリの限界" fill className="object-cover object-top" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/70 to-transparent" />
+          <div className="absolute bottom-4 left-4 right-4">
+            <p className="label-en mb-1">The Reality</p>
+            <p className="font-noto text-offwhite/80 text-xs tracking-wider leading-relaxed">
+              テクニックで「会う」ことはできても、本物の繋がりは生まれない。
             </p>
           </div>
-        ))}
+        </div>
       </div>
 
       {/* Comparison table */}

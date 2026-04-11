@@ -36,6 +36,17 @@ export default function Philosophy() {
           </div>
         </div>
 
+        {/* Twoshot: 実績写真 */}
+        <div className="relative w-full h-56 md:h-72 mb-16 overflow-hidden border border-gold/20">
+          <Image src="/twoshot.png" alt="実績写真" fill className="object-cover object-center" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d]/70 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0d0d0d]/40 to-transparent" />
+          <div className="absolute bottom-5 left-6">
+            <p className="label-en mb-1">Result</p>
+            <p className="font-noto text-offwhite/80 text-xs tracking-wider">構造が変わると、関係性が変わる。（※モザイク処理済み）</p>
+          </div>
+        </div>
+
         {/* Before / After */}
         <p className="label-en text-center tracking-widest mb-8">Before → After</p>
         <div className="border border-gold/15 overflow-hidden">
