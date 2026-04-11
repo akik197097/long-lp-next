@@ -36,24 +36,6 @@ export default function DiagnosticSession() {
           無料診断セッション——3つのステップで完結します。
         </p>
 
-        {/* LINE screenshot */}
-        <div className="grid md:grid-cols-2 gap-8 items-center mb-16">
-          <div className="relative h-64 overflow-hidden border border-gold/20">
-            <Image src="/line-shot.png" alt="LINEでのやり取り" fill className="object-cover object-top" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d]/60 to-transparent" />
-            <div className="absolute bottom-4 left-4">
-              <p className="label-en mb-1">Actual Conversation</p>
-              <p className="font-noto text-offwhite/70 text-xs tracking-wider">実際のLINEでのやり取り</p>
-            </div>
-          </div>
-          <div>
-            <p className="font-noto text-offwhite/70 text-sm leading-loose tracking-wider">
-              LINEを通じて、AKITOが直接あなたの現状をヒアリングします。
-              一方的な情報提供ではなく、<span className="text-offwhite">あなたの状況に合わせた個別の対話</span>を行います。
-            </p>
-          </div>
-        </div>
-
         {/* Steps */}
         <div className="grid md:grid-cols-3 gap-px bg-gold/10">
           {steps.map((s) => (

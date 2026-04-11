@@ -36,14 +36,23 @@ export default function Philosophy() {
           </div>
         </div>
 
-        {/* Twoshot: 実績写真 */}
-        <div className="relative w-full h-56 md:h-72 mb-16 overflow-hidden border border-gold/20">
-          <Image src="/twoshot.png" alt="実績写真" fill className="object-cover object-center" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d]/70 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0d0d0d]/40 to-transparent" />
-          <div className="absolute bottom-5 left-6">
-            <p className="label-en mb-1">Result</p>
-            <p className="font-noto text-offwhite/80 text-xs tracking-wider">構造が変わると、関係性が変わる。（※モザイク処理済み）</p>
+        {/* matchapp + line-shot: 実績スクリーンショット */}
+        <div className="grid md:grid-cols-2 gap-4 mb-16">
+          <div className="relative h-56 overflow-hidden border border-gold/20">
+            <Image src="/matchapp.png" alt="マッチングアプリ実績" fill className="object-cover object-top" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d]/70 to-transparent" />
+            <div className="absolute bottom-4 left-4">
+              <p className="label-en mb-1">Matching App</p>
+              <p className="font-noto text-offwhite/70 text-xs tracking-wider">（※モザイク処理済み）</p>
+            </div>
+          </div>
+          <div className="relative h-56 overflow-hidden border border-gold/20">
+            <Image src="/line-shot.png" alt="LINEでのやり取り実績" fill className="object-cover object-top" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d]/70 to-transparent" />
+            <div className="absolute bottom-4 left-4">
+              <p className="label-en mb-1">LINE</p>
+              <p className="font-noto text-offwhite/70 text-xs tracking-wider">（※モザイク処理済み）</p>
+            </div>
           </div>
         </div>
 

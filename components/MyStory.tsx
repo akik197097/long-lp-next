@@ -70,6 +70,26 @@ export default function MyStory() {
           </p>
         </div>
       </div>
+
+      {/* twoshot: 実績写真 */}
+      <div className="relative w-full h-56 md:h-72 mt-6 overflow-hidden border border-gold/20">
+        <Image src="/twoshot.png" alt="実績写真" fill className="object-cover object-center" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/70 to-transparent" />
+        <div className="absolute bottom-4 left-6">
+          <p className="label-en mb-1">Result</p>
+          <p className="font-noto text-offwhite/80 text-xs tracking-wider">構造が変わると、関係性が変わる。（※モザイク処理済み）</p>
+        </div>
+      </div>
+
+      {/* woman-grid: 実績グリッド */}
+      <div className="relative w-full h-48 md:h-64 mt-6 overflow-hidden border border-gold/20">
+        <Image src="/woman-grid.png" alt="実績一覧" fill className="object-cover object-top" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/80 to-transparent" />
+        <div className="absolute bottom-4 left-6">
+          <p className="label-en mb-1">Testimonials</p>
+          <p className="font-noto text-offwhite/70 text-xs tracking-wider">実際にプログラムを受けた方々（※モザイク処理済み）</p>
+        </div>
+      </div>
     </section>
   );
 }
