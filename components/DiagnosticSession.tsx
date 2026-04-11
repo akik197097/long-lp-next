@@ -1,83 +1,55 @@
 import Image from "next/image";
 
 const steps = [
-  {
-    number: "01",
-    title: "LINEで友達追加",
-    subtitle: "Add on LINE",
-    text: "下のボタンからAKITOのLINEを友達追加してください。24時間以内に個別メッセージをお送りします。",
-  },
-  {
-    number: "02",
-    title: "現状ヒアリング",
-    subtitle: "Diagnostic Conversation",
-    text: "現在の状況・過去の経験・どこに壁を感じているか——LINEのやり取りを通じて、あなたの5軸の現状を診断します。",
-  },
-  {
-    number: "03",
-    title: "個別フィードバック",
-    subtitle: "Personalized Feedback",
-    text: "診断結果をもとに、あなたが最初に取り組むべき軸と具体的なアクションをお伝えします。完全無料・勧誘なし。",
-  },
+  { num: "01", title: "LINEで友達追加",    en: "Add on LINE",              text: "下のボタンからAKITOのLINEを友達追加してください。24時間以内に個別メッセージをお送りします。" },
+  { num: "02", title: "現状ヒアリング",    en: "Diagnostic Conversation",  text: "現在の状況・過去の経験・どこに壁を感じているか——LINEのやり取りを通じて、あなたの5軸の現状を診断します。" },
+  { num: "03", title: "個別フィードバック", en: "Personalized Feedback",    text: "診断結果をもとに、あなたが最初に取り組むべき軸と具体的なアクションをお伝えします。完全無料・勧誘なし。" },
 ];
 
 export default function DiagnosticSession() {
   return (
-    <section className="section-padding max-w-5xl mx-auto">
-      <div className="flex items-center gap-6 mb-16">
-        <div className="h-px flex-1 bg-gold/20" />
-        <p className="font-cormorant italic text-gold tracking-widest2 text-sm">IX. Diagnostic Session</p>
-        <div className="h-px flex-1 bg-gold/20" />
-      </div>
-
-      {/* Full-width image banner */}
-      <div className="relative w-full h-72 md:h-96 mb-20 overflow-hidden">
-        <Image
-          src="/cta.jpeg"
-          alt="AKITO — 無料診断セッション"
-          fill
-          className="object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/50 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-bg/70 via-transparent to-bg/70" />
-        <div className="absolute inset-0 border border-gold/20 pointer-events-none" />
-        {/* Overlay text */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-          <p className="font-cormorant italic text-gold text-sm tracking-widest2 mb-4">
-            Free Diagnostic Session
-          </p>
-          <h2 className="font-noto text-2xl md:text-4xl font-light text-offwhite tracking-widest mb-4">
-            まず、あなたの現在地を知る。
-          </h2>
-          <p className="font-cormorant italic text-muted text-lg tracking-wide">
-            "Know where you stand before you move."
-          </p>
+    <section className="section-py bg-[#0d0d0d]">
+      <div className="container-lp">
+        <div className="flex items-center gap-4 mb-16">
+          <span className="label-en">09 — Diagnostic Session</span>
+          <div className="h-px flex-1 bg-gold/20" />
         </div>
-      </div>
 
-      <p className="font-noto text-muted text-center text-sm tracking-wider mb-16">
-        無料診断セッション——3つのステップで完結します。
-      </p>
+        {/* Full-width image */}
+        <div className="relative w-full h-64 md:h-80 mb-16 overflow-hidden">
+          <Image src="/cta.jpeg" alt="AKITO" fill className="object-cover object-center" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d] via-[#0d0d0d]/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0d0d0d]/60 via-transparent to-[#0d0d0d]/60" />
+          <div className="absolute inset-0 border border-gold/20" />
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+            <p className="label-en tracking-[0.3em] mb-4">Free Diagnostic Session</p>
+            <h2 className="font-noto text-2xl md:text-4xl font-light text-offwhite tracking-widest mb-3">
+              まず、あなたの現在地を知る。
+            </h2>
+            <p className="font-cormorant italic text-muted text-lg tracking-wide">
+              "Know where you stand before you move."
+            </p>
+          </div>
+        </div>
 
-      {/* Steps */}
-      <div className="relative">
-        <div className="hidden md:block absolute top-8 left-[calc(16.67%+1rem)] right-[calc(16.67%+1rem)] h-px bg-gold/20" />
-        <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-          {steps.map((step) => (
-            <div key={step.number} className="flex flex-col items-center text-center">
-              <div className="relative w-16 h-16 border border-gold/40 flex items-center justify-center mb-6 bg-bg">
-                <span className="font-cormorant italic text-gold text-2xl">{step.number}</span>
-              </div>
-              <p className="font-cormorant italic text-gold text-sm tracking-widest mb-1">{step.subtitle}</p>
-              <p className="font-noto text-offwhite text-base tracking-widest mb-4">{step.title}</p>
-              <p className="font-noto text-muted text-sm leading-relaxed tracking-wider">{step.text}</p>
+        <p className="font-noto text-muted/60 text-center text-sm tracking-wider mb-16">
+          無料診断セッション——3つのステップで完結します。
+        </p>
+
+        {/* Steps */}
+        <div className="grid md:grid-cols-3 gap-px bg-gold/10">
+          {steps.map((s) => (
+            <div key={s.num} className="bg-[#0d0d0d] p-8 text-center">
+              <p className="font-cormorant italic text-gold text-5xl opacity-30 mb-4">{s.num}</p>
+              <p className="label-en mb-2">{s.en}</p>
+              <p className="font-noto text-offwhite text-base tracking-widest mb-4">{s.title}</p>
+              <div className="h-px w-8 bg-gold/30 mx-auto mb-4" />
+              <p className="font-noto text-muted/60 text-sm leading-relaxed tracking-wider">{s.text}</p>
             </div>
           ))}
         </div>
-      </div>
 
-      <div className="mt-16 text-center">
-        <p className="font-noto text-muted text-xs tracking-widest">
+        <p className="font-noto text-muted/40 text-xs text-center tracking-widest mt-10">
           ※ 診断セッションは完全無料です。セールスや勧誘は一切行いません。
         </p>
       </div>

@@ -1,79 +1,75 @@
-const comparisons = [
-  {
-    left: { label: "テクニック思考", text: "「何を言うか」「どう見せるか」に集中する" },
-    right: { label: "構造的自己変革", text: "「自分がどういう人間か」を根本から変える" },
-  },
-  {
-    left: { label: "テクニック思考", text: "女性の反応に一喜一憂し、正解を探し続ける" },
-    right: { label: "構造的自己変革", text: "他者の反応に左右されない軸が自然に生まれる" },
-  },
-  {
-    left: { label: "テクニック思考", text: "一時的に上手くいっても、関係が長続きしない" },
-    right: { label: "構造的自己変革", text: "深い関係性が自然に構築・継続される" },
-  },
-  {
-    left: { label: "テクニック思考", text: "年齢を重ねるほど通用しなくなる" },
-    right: { label: "構造的自己変革", text: "年齢とともに深みと価値が増していく" },
-  },
+const pains = [
+  "アプローチしても、いつも「友達として」で終わる",
+  "マッチングアプリで会えても、2回目に繋がらない",
+  "モテ系ノウハウを試すほど、自分が嘘くさくなる",
+  "若い頃と同じやり方が、40代では全く通用しない",
 ];
 
-const problems = [
-  "ナンパ・マッチングアプリを試したが、会話が続かず消耗している",
-  "モテ系YouTubeやノウハウ本を読み漁っても現実が変わらない",
-  "若い頃と同じアプローチが40代では全く通用しないと気づいている",
-  "「いい人なんだけど」と断られ続けるパターンから抜け出せない",
+const comparison = [
+  { label: "女性への接し方", left: "反応を読んで戦略を変える", right: "在り方から自然に滲み出る" },
+  { label: "会話の質",       left: "テクニックで「うまく話す」",  right: "深さで「本物として伝わる」" },
+  { label: "年齢との関係",   left: "若さが武器→40代で通用しない", right: "深みが武器→年齢で強くなる" },
+  { label: "関係の続き方",   left: "盛り上がっても長続きしない",  right: "自然と深い関係が生まれる" },
+  { label: "変化の方向",     left: "「何を言うか」を磨く",        right: "「どんな人間か」を変える" },
 ];
 
 export default function Problem() {
   return (
-    <section id="problem" className="section-padding max-w-5xl mx-auto">
-      <div className="flex items-center gap-6 mb-16">
-        <div className="h-px flex-1 bg-gold/20" />
-        <p className="font-cormorant italic text-gold tracking-widest2 text-sm">II. Problem</p>
+    <section id="problem" className="section-py container-lp">
+      {/* Label */}
+      <div className="flex items-center gap-4 mb-16">
+        <span className="label-en">02 — Problem</span>
         <div className="h-px flex-1 bg-gold/20" />
       </div>
 
-      <h2 className="font-noto text-3xl md:text-4xl font-light text-offwhite text-center tracking-widest mb-4">
+      <h2 className="font-noto text-3xl md:text-4xl font-light text-offwhite tracking-widest leading-tight mb-4">
         テクニックを学ぶほど、<br />本質から遠ざかっていく。
       </h2>
-      <p className="font-cormorant italic text-muted text-xl text-center tracking-wide mb-16">
-        "The more techniques you learn, the further you drift from your truth."
+      <p className="font-cormorant italic text-muted text-xl tracking-wide mb-16">
+        "The more techniques you learn, the further you drift."
       </p>
 
       {/* Pain points */}
-      <div className="grid md:grid-cols-2 gap-px bg-gold/10 mb-20">
-        {problems.map((text, i) => (
-          <div key={i} className="bg-bg p-8 group hover:bg-surface transition-colors duration-500">
-            <p className="font-cormorant italic text-gold/50 text-4xl mb-3 group-hover:text-gold/70 transition-colors">
+      <div className="space-y-0 mb-20">
+        {pains.map((text, i) => (
+          <div key={i} className="flex items-start gap-6 py-5 border-b border-gold/10 group hover:border-gold/30 transition-colors">
+            <span className="font-cormorant italic text-gold/40 text-2xl shrink-0 group-hover:text-gold/60 transition-colors">
               {String(i + 1).padStart(2, "0")}
+            </span>
+            <p className="font-noto text-offwhite/70 text-base leading-relaxed tracking-wider group-hover:text-offwhite/90 transition-colors">
+              {text}
             </p>
-            <p className="font-noto text-offwhite/80 text-base leading-relaxed tracking-wider">{text}</p>
           </div>
         ))}
       </div>
 
-      {/* 2-column comparison */}
-      <h3 className="font-noto text-xl text-offwhite text-center tracking-widest mb-10">
-        なぜ、テクニックでは限界があるのか
-      </h3>
-      <div className="grid gap-px bg-gold/10">
-        {comparisons.map((row, i) => (
-          <div key={i} className="grid grid-cols-2 gap-px bg-gold/10">
-            <div className="bg-surface p-6">
-              <p className="font-cormorant italic text-muted text-xs tracking-widest mb-2">{row.left.label}</p>
-              <p className="font-noto text-offwhite/50 text-sm leading-relaxed tracking-wider">{row.left.text}</p>
+      {/* Comparison table */}
+      <p className="label-en mb-6 text-center tracking-widest">なぜテクニックでは限界があるのか</p>
+      <div className="border border-gold/15">
+        {/* Header */}
+        <div className="grid grid-cols-[120px_1fr_1fr] md:grid-cols-[160px_1fr_1fr] border-b border-gold/15">
+          <div className="p-4" />
+          <div className="p-4 border-l border-gold/15 text-center">
+            <p className="font-cormorant italic text-muted/60 text-sm tracking-widest">テクニック依存</p>
+          </div>
+          <div className="p-4 border-l border-gold/15 text-center">
+            <p className="font-cormorant italic text-gold text-sm tracking-widest">構造的自己変革</p>
+          </div>
+        </div>
+        {comparison.map((row, i) => (
+          <div key={i} className={`grid grid-cols-[120px_1fr_1fr] md:grid-cols-[160px_1fr_1fr] ${i < comparison.length - 1 ? "border-b border-gold/10" : ""}`}>
+            <div className="p-4 flex items-center">
+              <p className="font-noto text-muted/60 text-xs tracking-widest">{row.label}</p>
             </div>
-            <div className="bg-surface p-6 border-l-2 border-gold/30">
-              <p className="font-cormorant italic text-gold text-xs tracking-widest mb-2">{row.right.label}</p>
-              <p className="font-noto text-offwhite text-sm leading-relaxed tracking-wider">{row.right.text}</p>
+            <div className="p-4 border-l border-gold/10 flex items-center">
+              <p className="font-noto text-offwhite/35 text-sm leading-relaxed tracking-wider">{row.left}</p>
+            </div>
+            <div className="p-4 border-l border-gold/20 flex items-center bg-gold/[0.03]">
+              <p className="font-noto text-offwhite text-sm leading-relaxed tracking-wider">{row.right}</p>
             </div>
           </div>
         ))}
       </div>
-
-      <p className="font-noto text-muted text-center text-base leading-relaxed tracking-wider mt-16 max-w-2xl mx-auto">
-        40代以上の男性が女性に選ばれるのは、<span className="text-offwhite">テクニックの巧みさではなく、人間としての深みと構造</span>だ。
-      </p>
     </section>
   );
 }
