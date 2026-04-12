@@ -1,9 +1,11 @@
 import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
+import StageMap from "@/components/StageMap";
 import Insight from "@/components/Insight";
 import MyStory from "@/components/MyStory";
 import StructureVsTechnique from "@/components/StructureVsTechnique";
 import FiveElements from "@/components/FiveElements";
+import FutureVision from "@/components/FutureVision";
 import Philosophy from "@/components/Philosophy";
 import SelfCheck from "@/components/SelfCheck";
 import DiagnosticSession from "@/components/DiagnosticSession";
@@ -27,12 +29,17 @@ export default function Home() {
 
       <SectionDivider />
 
-      {/* ③ INSIGHT */}
+      {/* ③ STAGE MAP */}
+      <StageMap />
+
+      <SectionDivider />
+
+      {/* ④ INSIGHT */}
       <Insight />
 
       <SectionDivider />
 
-      {/* ④ MY STORY */}
+      {/* ⑤ MY STORY */}
       <MyStory />
 
       <SectionDivider />
@@ -47,27 +54,32 @@ export default function Home() {
 
       <SectionDivider />
 
-      {/* ⑦ PHILOSOPHY */}
+      {/* ⑧ FUTURE VISION */}
+      <FutureVision />
+
+      <SectionDivider />
+
+      {/* ⑨ PHILOSOPHY */}
       <Philosophy />
 
       <SectionDivider />
 
-      {/* ⑧ SELF CHECK */}
+      {/* ⑩ SELF CHECK */}
       <SelfCheck />
 
       <SectionDivider />
 
-      {/* ⑨ DIAGNOSTIC SESSION */}
+      {/* ⑪ DIAGNOSTIC SESSION */}
       <DiagnosticSession />
 
       <SectionDivider />
 
-      {/* ⑩ OFFER */}
+      {/* ⑫ OFFER */}
       <Offer />
 
       <SectionDivider />
 
-      {/* ⑪ FINAL CTA */}
+      {/* ⑬ FINAL CTA */}
       <FinalCta />
 
       {/* ⑫ FOOTER */}

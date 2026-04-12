@@ -29,7 +29,7 @@ export default function SelfCheck() {
   return (
     <section className="section-py container-lp">
       <div className="flex items-center gap-4 mb-16">
-        <span className="label-en">08 — Self Check</span>
+        <span className="label-en">10 — Self Check</span>
         <div className="h-px flex-1 bg-gold/20" />
       </div>
 

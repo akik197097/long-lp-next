@@ -12,11 +12,11 @@ export default function StructureVsTechnique() {
     <section className="section-py bg-[#0d0d0d]">
       <div className="container-lp">
         <div className="flex items-center gap-4 mb-16">
-          <span className="label-en">05 — Structure vs Technique</span>
+          <span className="label-en">06 — Structure vs Technique</span>
           <div className="h-px flex-1 bg-gold/20" />
         </div>
 
-        <h2 className="font-noto text-3xl md:text-4xl font-light text-offwhite tracking-widest leading-tight mb-4">
+        <h2 className="font-noto text-2xl md:text-4xl font-light text-offwhite tracking-widest leading-tight mb-4">
           一度きりで終わる男と、<br />自然に関係が続く男の違い。
         </h2>
         <p className="font-cormorant italic text-muted text-xl tracking-wide mb-16">

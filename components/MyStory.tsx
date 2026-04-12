@@ -1,26 +1,46 @@
 import Image from "next/image";
 
 const events = [
-  { year: "20代", label: "The Hunger",        text: "合コン・ナンパ・ノウハウ本——手当たり次第に試した。一時的な成功はあっても、本物の繋がりはいつも空虚だった。" },
-  { year: "20代後半", label: "The Plateau",   text: "テクニックを磨くほど、自分が薄くなる感覚があった。女性の前で「役を演じている自分」しかいなかった。" },
-  { year: "30代", label: "The Breaking Point", text: "8年間の結婚が終わった。妻の最後の言葉——「あなたは本当の自分を見せてくれなかった」。その夜、すべてを疑い始めた。" },
-  { year: "再構築期", label: "The Reconstruction", text: "心理学・哲学・身体論——ジャンルを超えて学び直した。「モテ」は結果であり、変えるべきは技術ではなく構造だと気づいた。" },
-  { year: "現在", label: "Now",               text: "40代以上の男性を対象に、構造的自己変革のコーチングを提供する。自分と同じ壁にいる男性に、その突破口を伝えることが使命だ。" },
+  {
+    year: "幼少期〜高校",
+    label: "The Beginning",
+    text: "型にはまれない少年だった。\n中高一貫の寮生活で読書・音楽・哲学にのめり込み、自分とは何かを問い続けた。初恋の記憶と、女性への純粋な信頼がここで生まれた。",
+  },
+  {
+    year: "大学〜大学院",
+    label: "The Pursuit",
+    text: "二度の留年、バーテンダー、バンド活動。六本木のクラブで外国人女性と過ごす日々。「どうすれば選ばれるか」ではなく「なぜ選ばれるか」を、無意識に観察し始めていた。",
+  },
+  {
+    year: "留学時代・31歳",
+    label: "The Discovery",
+    text: "フランス政府給費留学生として渡仏。言語も文化も違う環境で、自己を主張することの意味を学んだ。「在り方が変われば、現実が変わる」——この確信はここで生まれた。",
+  },
+  {
+    year: "40代",
+    label: "The Wall",
+    text: "安定した仕事、資格、実績。それでも何かが満たされなかった。離婚後は経済的余裕も少しあり、キャバクラ、ラウンジ、韓国パブの女性——華やかだが不毛な恋愛を追い求めた。しかしある時気づいた——結果を出している男は、やり方ではなく、在り方が違うと。",
+  },
+  {
+    year: "現在・55歳",
+    label: "Now",
+    text: "会社員としてダイビング、バンド活動を楽しむ。週1で20代女性とアポを取りながら、自分の人生を楽しんでいる。これはテクニックではなく、構造を整えた結果だ。",
+  },
 ];
 
 export default function MyStory() {
   return (
     <section className="section-py container-lp">
       <div className="flex items-center gap-4 mb-16">
-        <span className="label-en">04 — My Story</span>
+        <span className="label-en">05 — My Story</span>
         <div className="h-px flex-1 bg-gold/20" />
       </div>
 
       <h2 className="font-noto text-3xl md:text-4xl font-light text-offwhite tracking-widest leading-tight mb-4">
-        私も20年間、同じ壁の前にいた。
+        私もかつて、答えを探し続けていた。
       </h2>
       <p className="font-cormorant italic text-muted text-xl tracking-wide mb-6">
-        "Twenty years of searching. One moment of clarity."
+        "The journey that brought me here."
       </p>
       <p className="font-noto text-muted/60 text-sm tracking-wider mb-16">— コーチ AKITO</p>
 
@@ -50,7 +70,7 @@ export default function MyStory() {
               {i < events.length - 1 && <div className="w-px flex-1 bg-gold/10 mt-2" />}
             </div>
             {/* Content */}
-            <p className="font-noto text-offwhite/60 text-sm leading-loose tracking-wider group-hover:text-offwhite/80 transition-colors">
+            <p className="font-noto text-offwhite/60 text-sm leading-loose tracking-wider whitespace-pre-line group-hover:text-offwhite/80 transition-colors">
               {ev.text}
             </p>
           </div>
@@ -71,23 +91,29 @@ export default function MyStory() {
         </div>
       </div>
 
+      {/* Mission Statement */}
+      <div className="mt-16 border border-gold/30 p-8 md:p-10">
+        <p className="label-en mb-4">Mission</p>
+        <p className="font-noto text-offwhite text-base md:text-lg leading-loose tracking-widest">
+          私が本当に教えるのはノウハウだけではない。<br />
+          あなた自身の「男としての構造」を作り直すプロジェクトだ。
+        </p>
+      </div>
+
       {/* twoshot: 実績写真 */}
       <div className="relative w-full h-56 md:h-72 mt-6 overflow-hidden border border-gold/20">
         <Image src="/twoshot.png" alt="実績写真" fill className="object-cover object-center" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/70 to-transparent" />
         <div className="absolute bottom-4 left-6">
-          <p className="label-en mb-1">Result</p>
-          <p className="font-noto text-offwhite/80 text-xs tracking-wider">構造が変わると、関係性が変わる。（※モザイク処理済み）</p>
+          <p className="font-noto text-offwhite/80 text-xs tracking-wider">※モザイク処理済み</p>
         </div>
       </div>
 
       {/* woman-grid: 実績グリッド */}
-      <div className="relative w-full h-48 md:h-64 mt-6 overflow-hidden border border-gold/20">
-        <Image src="/woman-grid.png" alt="実績一覧" fill className="object-cover object-top" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/80 to-transparent" />
+      <div className="relative w-full aspect-[2/3] mt-6 border border-gold/20 bg-[#0a0a0a]">
+        <Image src="/woman-grid.png" alt="実績一覧" fill className="object-contain" />
         <div className="absolute bottom-4 left-6">
-          <p className="label-en mb-1">Testimonials</p>
-          <p className="font-noto text-offwhite/70 text-xs tracking-wider">実際にプログラムを受けた方々（※モザイク処理済み）</p>
+          <p className="font-noto text-offwhite/80 text-xs tracking-wider">※モザイク処理済み</p>
         </div>
       </div>
     </section>

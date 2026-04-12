@@ -5,7 +5,7 @@ export default function FinalCta() {
     <section className="section-py bg-[#0d0d0d]">
       <div className="container-lp">
         <div className="flex items-center gap-4 mb-16">
-          <span className="label-en">11 — Final CTA</span>
+          <span className="label-en">13 — Final CTA</span>
           <div className="h-px flex-1 bg-gold/20" />
         </div>
 
@@ -18,7 +18,7 @@ export default function FinalCta() {
 
           <p className="label-en text-center tracking-[0.3em] mb-8">Begin your reconstruction</p>
 
-          <h2 className="font-noto text-3xl md:text-5xl font-light text-offwhite tracking-widest leading-tight text-center mb-8">
+          <h2 className="font-noto text-2xl md:text-5xl font-light text-offwhite tracking-widest leading-tight text-center mb-8">
             テクニックを捨て、<br /><span className="text-gradient-gold">本物の自分</span>になる。
           </h2>
 

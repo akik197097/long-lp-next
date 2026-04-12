@@ -12,7 +12,7 @@ export default function Philosophy() {
     <section className="section-py bg-[#0d0d0d]">
       <div className="container-lp">
         <div className="flex items-center gap-4 mb-16">
-          <span className="label-en">07 — Philosophy</span>
+          <span className="label-en">09 — Philosophy</span>
           <div className="h-px flex-1 bg-gold/20" />
         </div>
 
@@ -38,21 +38,80 @@ export default function Philosophy() {
 
         {/* matchapp + line-shot: 実績スクリーンショット */}
         <div className="grid md:grid-cols-2 gap-4 mb-16">
-          <div className="relative h-56 overflow-hidden border border-gold/20">
-            <Image src="/matchapp.png" alt="マッチングアプリ実績" fill className="object-cover object-top" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d]/70 to-transparent" />
+          <div className="relative aspect-[2/3] border border-gold/20 bg-[#0d0d0d]">
+            <Image src="/matchapp.png" alt="マッチングアプリ実績" fill className="object-contain" />
             <div className="absolute bottom-4 left-4">
-              <p className="label-en mb-1">Matching App</p>
-              <p className="font-noto text-offwhite/70 text-xs tracking-wider">（※モザイク処理済み）</p>
+              <p className="font-noto text-offwhite/70 text-xs tracking-wider">※モザイク処理済み</p>
             </div>
           </div>
-          <div className="relative h-56 overflow-hidden border border-gold/20">
-            <Image src="/line-shot.png" alt="LINEでのやり取り実績" fill className="object-cover object-top" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d]/70 to-transparent" />
+          <div className="relative aspect-[2/3] border border-gold/20 bg-[#0d0d0d]">
+            <Image src="/line-shot.png" alt="LINEでのやり取り実績" fill className="object-contain" />
             <div className="absolute bottom-4 left-4">
-              <p className="label-en mb-1">LINE</p>
-              <p className="font-noto text-offwhite/70 text-xs tracking-wider">（※モザイク処理済み）</p>
+              <p className="font-noto text-offwhite/70 text-xs tracking-wider">※モザイク処理済み</p>
             </div>
+          </div>
+        </div>
+
+        {/* Visual BEFORE / AFTER cards */}
+        <div className="space-y-4 mb-16">
+          {/* BEFORE */}
+          <div className="border border-gold/20 bg-[#0a0a0a] p-6">
+            <p className="font-cormorant italic text-muted/50 text-xs tracking-widest mb-4">Before</p>
+            <svg
+              viewBox="0 0 320 90"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-full max-w-xs mx-auto block"
+            >
+              {/* Dashed circle: 自分 */}
+              <circle cx="80" cy="45" r="30" fill="#0a0a0a" stroke="#C9A84C" strokeWidth="1" strokeOpacity="0.5" strokeDasharray="5 3" />
+              <text x="80" y="45" textAnchor="middle" dominantBaseline="middle" fill="#f5f0e8" fontSize="12" fontFamily="sans-serif" letterSpacing="2" fillOpacity="0.7">自分</text>
+
+              {/* Arrow */}
+              <line x1="114" y1="45" x2="204" y2="45" stroke="#C9A84C" strokeWidth="1.2" strokeOpacity="0.5" />
+              <polygon points="200,39 216,45 200,51" fill="#C9A84C" fillOpacity="0.5" />
+
+              {/* Solid circle: 女性 */}
+              <circle cx="240" cy="45" r="30" fill="#0a0a0a" stroke="#f5f0e8" strokeWidth="1" strokeOpacity="0.4" />
+              <text x="240" y="45" textAnchor="middle" dominantBaseline="middle" fill="#f5f0e8" fontSize="12" fontFamily="sans-serif" letterSpacing="2" fillOpacity="0.7">女性</text>
+            </svg>
+            <p className="font-noto text-center text-offwhite/40 text-xs tracking-wider mt-4">女性だけを追い求める</p>
+          </div>
+
+          {/* AFTER */}
+          <div className="border border-gold/40 border-t-2 bg-[#0a0a0a] p-6">
+            <p className="font-cormorant italic text-gold text-xs tracking-widest mb-4">After</p>
+            <svg
+              viewBox="0 0 320 200"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-full max-w-xs mx-auto block"
+            >
+              {/* Lines: center → nodes */}
+              <line x1="160" y1="100" x2="160" y2="52" stroke="#C9A84C" strokeWidth="1" strokeOpacity="0.4" />
+              <line x1="160" y1="100" x2="213" y2="100" stroke="#C9A84C" strokeWidth="1" strokeOpacity="0.4" />
+              <line x1="160" y1="100" x2="160" y2="148" stroke="#C9A84C" strokeWidth="1" strokeOpacity="0.4" />
+              <line x1="160" y1="100" x2="107" y2="100" stroke="#C9A84C" strokeWidth="1" strokeOpacity="0.4" />
+
+              {/* Center: 自分 */}
+              <circle cx="160" cy="100" r="36" fill="#0a0a0a" stroke="#C9A84C" strokeWidth="1.5" />
+              <text x="160" y="100" textAnchor="middle" dominantBaseline="middle" fill="#f5f0e8" fontSize="13" fontFamily="sans-serif" letterSpacing="2">自分</text>
+
+              {/* 友人 — top */}
+              <circle cx="160" cy="30" r="20" fill="#0a0a0a" stroke="#C9A84C" strokeWidth="1" strokeOpacity="0.6" />
+              <text x="160" y="30" textAnchor="middle" dominantBaseline="middle" fill="#C9A84C" fontSize="10" fontFamily="sans-serif" letterSpacing="1">友人</text>
+
+              {/* 家族 — right */}
+              <circle cx="236" cy="100" r="20" fill="#0a0a0a" stroke="#C9A84C" strokeWidth="1" strokeOpacity="0.6" />
+              <text x="236" y="100" textAnchor="middle" dominantBaseline="middle" fill="#C9A84C" fontSize="10" fontFamily="sans-serif" letterSpacing="1">家族</text>
+
+              {/* 異性 — bottom */}
+              <circle cx="160" cy="170" r="20" fill="#0a0a0a" stroke="#C9A84C" strokeWidth="1" strokeOpacity="0.6" />
+              <text x="160" y="170" textAnchor="middle" dominantBaseline="middle" fill="#C9A84C" fontSize="10" fontFamily="sans-serif" letterSpacing="1">異性</text>
+
+              {/* 仕事 — left */}
+              <circle cx="84" cy="100" r="20" fill="#0a0a0a" stroke="#C9A84C" strokeWidth="1" strokeOpacity="0.6" />
+              <text x="84" y="100" textAnchor="middle" dominantBaseline="middle" fill="#C9A84C" fontSize="10" fontFamily="sans-serif" letterSpacing="1">仕事</text>
+            </svg>
+            <p className="font-noto text-center text-offwhite/70 text-xs tracking-wider mt-4">自分を中心に全てが循環する</p>
           </div>
         </div>
 

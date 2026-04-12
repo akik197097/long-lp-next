@@ -3,7 +3,7 @@ export default function Insight() {
     <section className="section-py bg-[#0d0d0d]">
       <div className="container-lp">
         <div className="flex items-center gap-4 mb-16">
-          <span className="label-en">03 — Insight</span>
+          <span className="label-en">04 — Insight</span>
           <div className="h-px flex-1 bg-gold/20" />
         </div>
 
@@ -47,11 +47,44 @@ export default function Insight() {
               </div>
               <div className="font-noto text-offwhite/50 text-sm tracking-widest">現在地</div>
             </div>
-            <p className="font-noto text-offwhite/70 text-sm leading-loose tracking-wider">
+            <p className="font-noto text-offwhite/70 text-xs leading-loose tracking-wider">
               「どんな人間か」を垂直方向に深化させる。<br />
               構造が変わると、全ての表現が自然に変わる。
             </p>
           </div>
+        </div>
+
+        {/* Hub diagram: 自分を中心に全てが循環する */}
+        <div className="mt-16 mb-16 border border-gold/20 bg-[#0a0a0a] py-8 px-4">
+          <svg
+            viewBox="0 0 320 215"
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-full max-w-[260px] mx-auto block"
+          >
+            {/* Lines: center → nodes */}
+            <line x1="160" y1="108" x2="160" y2="28" stroke="#C9A84C" strokeWidth="1" strokeOpacity="0.45" />
+            <line x1="160" y1="108" x2="229" y2="148" stroke="#C9A84C" strokeWidth="1" strokeOpacity="0.45" />
+            <line x1="160" y1="108" x2="91" y2="148" stroke="#C9A84C" strokeWidth="1" strokeOpacity="0.45" />
+
+            {/* Center: 自分 */}
+            <circle cx="160" cy="108" r="34" fill="#0a0a0a" stroke="#C9A84C" strokeWidth="1.5" />
+            <text x="160" y="108" textAnchor="middle" dominantBaseline="middle" fill="#f5f0e8" fontSize="14" fontFamily="sans-serif" letterSpacing="2">自分</text>
+
+            {/* 家族 — top */}
+            <circle cx="160" cy="28" r="24" fill="#0a0a0a" stroke="#C9A84C" strokeWidth="1" strokeOpacity="0.6" />
+            <text x="160" y="28" textAnchor="middle" dominantBaseline="middle" fill="#C9A84C" fontSize="12" fontFamily="sans-serif" letterSpacing="1">家族</text>
+
+            {/* 異性 — bottom right */}
+            <circle cx="229" cy="148" r="24" fill="#0a0a0a" stroke="#C9A84C" strokeWidth="1" strokeOpacity="0.6" />
+            <text x="229" y="148" textAnchor="middle" dominantBaseline="middle" fill="#C9A84C" fontSize="12" fontFamily="sans-serif" letterSpacing="1">異性</text>
+
+            {/* 仕事 — bottom left */}
+            <circle cx="91" cy="148" r="24" fill="#0a0a0a" stroke="#C9A84C" strokeWidth="1" strokeOpacity="0.6" />
+            <text x="91" y="148" textAnchor="middle" dominantBaseline="middle" fill="#C9A84C" fontSize="12" fontFamily="sans-serif" letterSpacing="1">仕事</text>
+
+            {/* Caption */}
+            <text x="160" y="204" textAnchor="middle" dominantBaseline="middle" fill="#f5f0e8" fontSize="10" fontFamily="sans-serif" letterSpacing="2" fillOpacity="0.45">自分を中心に全てが循環する</text>
+          </svg>
         </div>
 
         {/* Key insight */}
