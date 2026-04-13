@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const LINE_URL = "https://line.me/ti/p/@232awhbc";
+const LINE_URL = "https://utage-system.com/p/eX5DUD1rEaJW";
 
 export default function FloatingCta() {
   const [visible, setVisible] = useState(false);

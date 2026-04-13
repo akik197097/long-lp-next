@@ -1,4 +1,4 @@
-const LINE_URL = "https://line.me/ti/p/@232awhbc";
+const LINE_URL = "https://utage-system.com/p/eX5DUD1rEaJW";
 
 export default function Footer() {
   return (

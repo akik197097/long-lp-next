@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const LINE_URL = "https://line.me/ti/p/@232awhbc";
+const LINE_URL = "https://utage-system.com/p/eX5DUD1rEaJW";
 
 const axes = [
   { num: "01", key: "CORE",      ja: "自己軸",      q: "他者の評価に関わらず「自分はこういう人間だ」という感覚を持っているか？",       low: "常に他者の反応で自分を判断してしまう",       high: "何があっても揺るがない自分の中心がある" },
