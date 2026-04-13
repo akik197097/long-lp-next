@@ -15,19 +15,32 @@ export default function DiagnosticSession() {
           <div className="h-px flex-1 bg-gold/20" />
         </div>
 
-        {/* Full-width image */}
-        <div className="relative w-full h-64 md:h-80 mb-16 overflow-hidden">
-          <Image src="/cta.jpeg" alt="AKITO" fill className="object-cover object-center" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d] via-[#0d0d0d]/40 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0d0d0d]/60 via-transparent to-[#0d0d0d]/60" />
-          <div className="absolute inset-0 border border-gold/20" />
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+        {/* Portrait image */}
+        <div className="mb-16 flex flex-col items-center">
+          <div style={{ overflow: "visible" }}>
+            <Image
+              src="/cta.jpeg"
+              alt="AKITO"
+              width={250}
+              height={400}
+              style={{
+                width: "auto",
+                maxWidth: "250px",
+                height: "auto",
+                objectFit: "contain",
+                objectPosition: "top",
+                display: "block",
+                margin: "0 auto",
+              }}
+            />
+          </div>
+          <div className="mt-8 text-center">
             <p className="label-en tracking-[0.3em] mb-4">Free Diagnostic Session</p>
             <h2 className="font-noto text-2xl md:text-4xl font-light text-offwhite tracking-widest mb-3">
               まず、あなたの現在地を知る。
             </h2>
             <p className="font-cormorant italic text-muted text-lg tracking-wide">
-              "Know where you stand before you move."
+              &ldquo;Know where you stand before you move.&rdquo;
             </p>
           </div>
         </div>

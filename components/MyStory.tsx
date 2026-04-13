@@ -45,11 +45,18 @@ export default function MyStory() {
       <p className="font-noto text-muted/60 text-sm tracking-wider mb-16">— コーチ AKITO</p>
 
       {/* story1 image */}
-      <div className="relative w-full h-56 md:h-72 mb-16 overflow-hidden">
-        <Image src="/story1.jpeg" alt="転換点" fill className="object-cover object-center" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/30 to-transparent" />
-        <div className="absolute inset-0 border border-gold/20" />
-        <div className="absolute bottom-5 left-6">
+      <div className="mb-16 flex flex-col items-center">
+        <div className="border border-gold/20 mx-auto" style={{ maxWidth: "200px", width: "100%", overflow: "visible" }}>
+          <Image
+            src="/story1.jpeg"
+            alt="転換点"
+            width={200}
+            height={300}
+            className="block mx-auto"
+            style={{ objectFit: "contain", objectPosition: "top center", width: "100%", maxWidth: "200px", height: "auto" }}
+          />
+        </div>
+        <div className="mt-3 text-center">
           <p className="label-en mb-1">The Breaking Point</p>
           <p className="font-noto text-offwhite text-sm tracking-widest">30代・離婚——すべてを疑い始めた夜</p>
         </div>
@@ -78,12 +85,18 @@ export default function MyStory() {
       </div>
 
       {/* story2 image */}
-      <div className="relative w-full h-72 md:h-96 mt-16 overflow-hidden">
-        <Image src="/story2.jpeg" alt="現在のAKITO" fill className="object-cover object-top" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/20 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/60 to-transparent" />
-        <div className="absolute inset-0 border border-gold/20" />
-        <div className="absolute bottom-8 left-6 max-w-xs">
+      <div className="mt-16 flex flex-col items-center">
+        <div className="border border-gold/20 mx-auto" style={{ maxWidth: "200px", width: "100%", overflow: "visible" }}>
+          <Image
+            src="/story2.jpeg"
+            alt="現在のAKITO"
+            width={200}
+            height={300}
+            className="block mx-auto"
+            style={{ objectFit: "contain", objectPosition: "top center", width: "100%", maxWidth: "200px", height: "auto" }}
+          />
+        </div>
+        <div className="mt-3 text-center max-w-xs">
           <p className="label-en mb-2">Now — AKITO</p>
           <p className="font-noto text-offwhite text-sm leading-relaxed tracking-wider">
             構造を知った男は、追いかけるのをやめる。

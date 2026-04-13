@@ -18,11 +18,17 @@ export default function Philosophy() {
 
         {/* Quote + image */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
-          <div className="relative h-72 md:h-96 overflow-hidden order-2 md:order-1">
-            <Image src="/philosophy.jpeg" alt="Philosophy" fill className="object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d]/80 to-transparent" />
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0d0d0d]/40" />
-            <div className="absolute inset-0 border border-gold/20" />
+          <div className="order-2 md:order-1 flex justify-center">
+            <div className="border border-gold/20 mx-auto" style={{ maxWidth: "200px", width: "100%", overflow: "visible" }}>
+              <Image
+                src="/philosophy.jpeg"
+                alt="Philosophy"
+                width={200}
+                height={300}
+                className="block mx-auto"
+                style={{ objectFit: "contain", objectPosition: "top center", width: "100%", maxWidth: "200px", height: "auto" }}
+              />
+            </div>
           </div>
           <div className="order-1 md:order-2">
             <div className="font-cormorant text-gold/15 text-8xl leading-none mb-2">"</div>
