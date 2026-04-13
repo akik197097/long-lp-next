@@ -16,7 +16,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 border border-gold/30 px-8 py-3 font-noto text-gold text-sm tracking-widest hover:bg-gold/5 transition-colors duration-300"
           >
-            LINE: @232awhbc
+            男の価値診断セッションに無料で申し込む
           </a>
         </div>
 

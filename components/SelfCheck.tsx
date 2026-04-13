@@ -107,7 +107,7 @@ export default function SelfCheck() {
           <div className="text-center">
             <a href={LINE_URL} target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-gold hover:bg-gold/90 text-bg font-noto text-sm tracking-widest px-10 py-4 transition-colors duration-300">
-              詳細診断をLINEで受け取る（無料）→
+              男の価値診断セッションに無料で申し込む →
             </a>
           </div>
         </div>
