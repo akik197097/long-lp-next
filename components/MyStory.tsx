@@ -129,6 +129,11 @@ export default function MyStory() {
           <p className="font-noto text-offwhite/80 text-xs tracking-wider">※モザイク処理済み</p>
         </div>
       </div>
+
+      {/* woman-grid caption */}
+      <p className="font-noto mt-3 text-center italic" style={{ fontSize: "0.85rem", color: "#999999" }}>
+        ※プライバシー保護のためモザイク処理をしていますが、実際にお付き合いした女性たちです。出会いからお付き合いまでの経緯は個別セッション時に詳しくお話しします。
+      </p>
     </section>
   );
 }
