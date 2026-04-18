@@ -25,7 +25,7 @@ const elements = [
     key: "PRESENCE",
     ja: "存在感・身体・声",
     summary: "内側の状態が身体を通じて外に現れるもの",
-    body: "PRESENCEは内側の状態が外に現れたものです。姿勢、呼吸、声、視線、動き、空気感。これらは意識よりも身体に現れます。女性は言葉よりも非言語を強く受け取ります。言葉が正しくても存在が不安定なら違和感が生まれます。\n\nPRESENCEが弱いと、身体は硬く、声は弱く、呼吸は浅くなります。自信はあっても伝わらず、印象が薄くなります。逆にPRESENCEが整うと、言葉は少なくても存在が伝わります。余裕、落ち着き、静かな強さが自然に出ます。PRESENCEは外見の問題ではなく「通り」の問題です。内側のエネルギーが身体を通って外に出るかどうか。\n\n女性はPRESENCEに本能的に反応します。余裕のある男、静かな男、安定した男に安心と魅力を感じます。PRESENCEは作るものではなく、整えるものです。",
+    body: "PRESENCEは内側の状態が外に現れたものです。姿勢、呼吸、声、視線、動き、空気感、そしてセックス。これらは意識よりも身体に現れます。女性は言葉よりも非言語を強く受け取ります。言葉が正しくても存在が不安定なら違和感が生まれます。\n\nPRESENCEが弱いと、身体は硬く、声は弱く、呼吸は浅くなります。自信はあっても伝わらず、印象が薄くなります。逆にPRESENCEが整うと、言葉は少なくても存在が伝わります。余裕、落ち着き、静かな強さが自然に出ます。PRESENCEは外見の問題ではなく「通り」の問題です。内側のエネルギーが身体を通って外に出るかどうか。\n\n女性はPRESENCEに本能的に反応します。余裕のある男、静かな男、安定した男に安心と魅力を感じます。PRESENCEは作るものではなく、整えるものです。",
   },
   {
     num: "03",
@@ -77,9 +77,9 @@ export default function FiveElements() {
       </div>
 
       {/* Element list */}
-      <div className="grid grid-cols-5 gap-2 mb-16">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 mb-16">
         {elements.map((el) => (
-          <div key={el.key} className="text-center border border-gold/15 py-4 px-2">
+          <div key={el.key} className="text-center border border-gold/15 py-4 px-3">
             <p className="font-cormorant italic text-gold text-base tracking-widest mb-1">{el.key}</p>
             <p className="font-noto text-offwhite/40 text-[10px] tracking-wider leading-tight">{el.ja}</p>
           </div>
@@ -158,8 +158,8 @@ export default function FiveElements() {
                 </div>
               </button>
 
-              <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"}`}>
-                <div className="pb-8 pl-20 pr-8 border-t border-gold/[0.08] pt-6">
+              <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? "max-h-[1200px] opacity-100" : "max-h-0 opacity-0"}`}>
+                <div className="pb-12 pl-8 md:pl-20 pr-8 border-t border-gold/[0.08] pt-8">
                   {"img" in el && el.img && (
                     <div className="relative w-full h-48 mb-6 overflow-hidden border border-gold/15">
                       <Image src={el.img as string} alt={el.key} fill className="object-cover object-center" />
