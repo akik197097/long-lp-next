@@ -5,38 +5,42 @@ import { useState } from "react";
 const stages = [
   {
     number: "01",
-    en: "Stage 1 — No Foundation",
-    ja: "基礎がない",
-    body: "テクニックすら知らない段階。\nアプローチも、会話も、LINEも\n何が正解か分からない。",
-    arrow: "まず基礎のテクニックを身につける",
+    en: "Stage 1 — Practical Skills",
+    ja: "実践スキルの習得",
+    body: "マッチングアプリ攻略・ストリートナンパ・会話術・\nノンバーバル・女性の扱い方を完全習得する段階。\nテクニックを体系的に身につける起点。",
+    arrow: "まず実践スキルを完全習得する",
     todos: [
-      "女性が喜ぶ誘い方を学ぶ",
-      "マッチングアプリのプロフィールを最適化する",
-      "デートでの会話の流れを身につける",
-      "LINEの正しい返し方を習得する",
+      "マッチングアプリのプロフィール・攻略法を最適化する",
+      "ストリートナンパの基礎と実践を習得する",
+      "会話術・トーク構成を体系的に学ぶ",
+      "ノンバーバル（姿勢・視線・声・空気感）を整える",
+      "女性の扱い方・リード術を実践で習得する",
     ],
   },
   {
     number: "02",
-    en: "Stage 2 — Techniques, but Limited",
-    ja: "テクニックはある、でも限界がある",
-    body: "学んだテクニックで会えるようにはなった。\nでも関係が続かない。深まらない。\n\u201cいい人\u201dで終わってしまう。",
-    arrow: "構造を整える必要がある",
+    en: "Stage 2 — The Five Foundations",
+    ja: "5つの在り方の確立",
+    body: "実践スキルの上に在り方を重ねる段階。\nマインド・女性心理・会話の深さ・ノンバーバル・\n人生のバランスを整え、追われる男の土台を作る。",
+    arrow: "在り方の5軸を整える",
     todos: [
-      "テクニックに頼らない在り方を整える",
-      "5つの要素（CORE / PRESENCE / INSIGHT / DEPTH / EVOLUTION）を理解する",
-      "関係を深める構造を身につける",
+      "強めるべきマインド（CORE）を確立する",
+      "女性心理の構造を深く理解する",
+      "深みのある会話（DEPTH）を習慣にする",
+      "ノンバーバル（PRESENCE）を継続的に鍛える",
+      "常に進化し続ける人生（EVOLUTION）のバランスを整える",
     ],
   },
   {
     number: "03",
     en: "Stage 3 — Structure Complete",
-    ja: "構造が整い、選ばれ続ける",
-    body: "テクニックを持った上で、男としての構造が整っている状態。\n追わなくても、自然に関係が続く。\n年齢を重ねるほど磁力が増していく。",
+    ja: "男の価値構造の完成",
+    body: "テクニックと在り方が統合された状態。\n追われる男として、美女・ハイスペック女子との\n長期的な関係を自然に構築できる。",
     arrow: null,
     todos: [
-      "現在の自分の構造を定期的に見直す",
-      "年齢を重ねるほど進化し続ける習慣をつくる",
+      "5軸の構造を定期的に点検・深化させる",
+      "美女・ハイスペック女子との関係を自然に継続する",
+      "年齢を重ねるほど磁力が増す習慣を維持する",
     ],
   },
 ];
@@ -55,7 +59,7 @@ export default function StageMap() {
       </div>
 
       <h2 className="font-noto text-3xl md:text-4xl font-light text-offwhite tracking-widest leading-tight mb-4">
-        あなたは今、<br />どの段階にいますか？
+        テクニックから在り方へ。<br />あなたは今、どの段階にいますか？
       </h2>
       <p className="font-cormorant italic text-muted text-xl tracking-wide mb-16">
         &ldquo;Where are you right now?&rdquo;

@@ -24,20 +24,19 @@ export default function Hero() {
       <div className="relative z-10 container-lp pb-20 md:pb-28">
         <div className="max-w-2xl">
           <h1 className="font-noto text-4xl md:text-6xl font-light text-offwhite leading-tight tracking-widest mb-8">
-            テクニックをいくら学んでも、<br />
-            <span className="text-gradient-gold font-medium">女性からモテることはなかった。</span>
+            テクニックから、在り方へ。<br />
+            <span className="text-gradient-gold font-medium">追う男から、追われる男へ。</span>
           </h1>
 
           <div className="flex items-center gap-4 mb-8">
             <div className="h-px w-12 bg-gold/50" />
             <p className="font-cormorant italic text-muted text-lg tracking-wide">
-              The more I chased connection, the more it slipped away.
+              From chasing to being chosen.
             </p>
           </div>
 
           <p className="font-noto text-offwhite/60 text-base leading-loose tracking-wider mb-12 max-w-lg">
-            正しいと信じてやってきた。アプローチも、会話術も、自己投資も。
-            それでも、何かが根本的にズレていた。
+            マッチングアプリ攻略から女性の扱い方まで、実践的なスキルを全て習得した上で、さらに上を目指す。男の価値を根本から変えるトータルサポート。
           </p>
 
           <a
