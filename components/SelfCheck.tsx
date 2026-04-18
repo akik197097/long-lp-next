@@ -13,10 +13,10 @@ const axes = [
 ];
 
 function getResult(total: number) {
-  if (total <= 8)  return { level: "D — 再構築の余地が大きい",    color: "text-muted",     msg: "テクニック思考が深く根付いている状態です。今すぐ構造的なアプローチを始めることで、最も大きな変化が期待できます。" };
-  if (total <= 13) return { level: "C — 気づき始めている段階",    color: "text-offwhite",  msg: "問題に気づきながらも、方法が定まっていない状態です。5軸の構造を理解することで、変化の方向が明確になります。" };
-  if (total <= 18) return { level: "B — 構造の片鱗を掴んでいる",  color: "text-gold/80",   msg: "一部の軸は育っていますが、全体のバランスが取れていません。弱い軸を特定し、集中的に取り組む段階です。" };
-  return             { level: "A — 構造変革の実践者",             color: "text-gradient-gold", msg: "すでに構造的な思考が育っています。さらに深化させることで、存在そのものが磁力を持つ段階へ進めます。" };
+  if (total <= 8)  return { level: "D — 再構築の余地が大きい",    color: "text-muted",     msg: "テクニック思考が深く根付いている状態です。今すぐ在り方を軸としたアプローチを始めることで、最も大きな変化が期待できます。" };
+  if (total <= 13) return { level: "C — 気づき始めている段階",    color: "text-offwhite",  msg: "問題に気づきながらも、方法が定まっていない状態です。5軸の在り方を理解することで、変化の方向が明確になります。" };
+  if (total <= 18) return { level: "B — 在り方の片鱗を掴んでいる",  color: "text-gold/80",   msg: "一部の軸は育っていますが、全体のバランスが取れていません。弱い軸を特定し、集中的に取り組む段階です。" };
+  return             { level: "A — 在り方変革の実践者",             color: "text-gradient-gold", msg: "すでに在り方を軸とした思考が育っています。さらに深化させることで、存在そのものが磁力を持つ段階へ進めます。" };
 }
 
 export default function SelfCheck() {

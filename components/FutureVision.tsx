@@ -16,7 +16,7 @@ export default function FutureVision() {
       </div>
 
       <h2 className="font-noto text-2xl md:text-4xl font-light text-offwhite tracking-widest leading-tight mb-4">
-        構造が整ったとき、<br />あなたが手に入れる未来。
+        在り方が整ったとき、<br />あなたが手に入れる未来。
       </h2>
       <p className="font-cormorant italic text-muted text-xl tracking-wide mb-16">
         &ldquo;The life that awaits you.&rdquo;

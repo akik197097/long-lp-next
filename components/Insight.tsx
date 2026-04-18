@@ -37,11 +37,11 @@ export default function Insight() {
           <div className="bg-[#0a0a0a] p-8 md:p-10 border-t-2 border-gold/60">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-8 h-px bg-gold/40" />
-              <span className="label-en">構造的変革のアプローチ</span>
+              <span className="label-en">在り方変革のアプローチ</span>
             </div>
             {/* Vertical arrow */}
             <div className="flex flex-col items-start gap-3 mb-6">
-              <div className="font-noto text-gold text-sm tracking-widest">構造が変わる</div>
+              <div className="font-noto text-gold text-sm tracking-widest">在り方が変わる</div>
               <div className="w-px h-10 bg-gold/50 ml-6 relative">
                 <div className="absolute -top-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[4px] border-r-[4px] border-b-[6px] border-l-transparent border-r-transparent border-b-gold/60" />
               </div>
@@ -49,7 +49,7 @@ export default function Insight() {
             </div>
             <p className="font-noto text-offwhite/70 text-xs leading-loose tracking-wider">
               「どんな人間か」を垂直方向に深化させる。<br />
-              構造が変わると、全ての表現が自然に変わる。
+              在り方が変わると、全ての表現が自然に変わる。
             </p>
           </div>
         </div>
@@ -99,7 +99,7 @@ export default function Insight() {
         <div className="grid grid-cols-2 gap-px bg-gold/10 mt-16">
           {[
             { num: "90%", text: "の男性が「テクニック」方向に努力している" },
-            { num: "10%", text: "が「構造」を変えた結果として選ばれている" },
+            { num: "10%", text: "が「在り方」を変えた結果として選ばれている" },
           ].map((s) => (
             <div key={s.num} className="bg-[#0d0d0d] p-8 text-center">
               <p className="font-cormorant italic text-gradient-gold text-5xl md:text-6xl mb-3">{s.num}</p>

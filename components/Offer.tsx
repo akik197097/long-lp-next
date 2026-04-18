@@ -27,7 +27,7 @@ const tokutens = [
   {
     num: "05",
     img: "/tokuten1.PNG",
-    title: "男の価値構造診断シート（50問）",
+    title: "男の在り方のバランス診断シート（50問）",
     sub: "自分の現在地を正確に測るカルテ",
   },
   {
@@ -40,7 +40,7 @@ const tokutens = [
     num: "07",
     img: "/tokuten3.PNG",
     title: "追われる男の習慣リスト",
-    sub: "日常から構造を作り直す実践録",
+    sub: "日常から在り方のバランスを作り直す実践録",
   },
 ];
 

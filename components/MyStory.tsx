@@ -24,7 +24,7 @@ const events = [
   {
     year: "現在・55歳",
     label: "Now",
-    text: "会社員としてダイビング、バンド活動を楽しむ。週1で20代女性とアポを取りながら、自分の人生を楽しんでいる。これはテクニックではなく、構造を整えた結果だ。",
+    text: "会社員としてダイビング、バンド活動を楽しむ。週1で20代女性とアポを取りながら、自分の人生を楽しんでいる。これはテクニックではなく、在り方のバランスを整えた結果だ。",
   },
 ];
 
@@ -109,7 +109,7 @@ export default function MyStory() {
         <p className="label-en mb-4">Mission</p>
         <p className="font-noto text-offwhite text-base md:text-lg leading-loose tracking-widest">
           私が本当に教えるのはノウハウだけではない。<br />
-          あなた自身の「男としての構造」を作り直すプロジェクトだ。
+          あなた自身の「男としての在り方」を作り直すプロジェクトだ。
         </p>
       </div>
 

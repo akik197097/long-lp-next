@@ -36,7 +36,7 @@ export default function DiagnosticSession() {
           </div>
           <div className="mt-8 text-center">
             <p className="label-en tracking-[0.3em] mb-4">Free Diagnostic Session</p>
-            <h2 className="font-noto text-2xl md:text-4xl font-light text-offwhite tracking-widest mb-3">
+            <h2 className="font-noto text-xl md:text-4xl font-light text-offwhite tracking-tight md:tracking-widest mb-3 whitespace-nowrap">
               まず、あなたの現在地を知る。
             </h2>
             <p className="font-cormorant italic text-muted text-lg tracking-wide">

@@ -33,7 +33,7 @@ export default function StructureVsTechnique() {
               <p className="font-cormorant italic text-muted/50 text-xs tracking-widest">テクニック依存の男</p>
             </div>
             <div className="px-5 py-4 border-l border-gold/30 bg-gold/[0.04]">
-              <p className="font-cormorant italic text-gold text-xs tracking-widest">構造が変わった男</p>
+              <p className="font-cormorant italic text-gold text-xs tracking-widest">在り方が変わった男</p>
             </div>
           </div>
           {rows.map((row, i) => (
