@@ -18,7 +18,7 @@ const notoSerifJP = Noto_Serif_JP({
 });
 
 export const metadata: Metadata = {
-  title: "男の価値再構築プロジェクト | AKITO",
+  title: "男の在り方再構築プロジェクト | AKITO",
   description:
     "テクニックではなく構造的自己変革で、40代以上の男性が本物の魅力を手に入れる。CORE・PRESENCE・INSIGHT・DEPTH・EVOLUTIONの5軸で、あなたの価値を根本から再構築する。",
 };
