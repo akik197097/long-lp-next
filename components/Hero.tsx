@@ -23,7 +23,7 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 container-lp pb-20 md:pb-28">
         <div className="max-w-2xl">
-          <p className="font-noto text-2xl md:text-3xl font-medium text-offwhite tracking-widest mb-4">
+          <p className="font-noto text-xl md:text-3xl font-medium text-offwhite tracking-tight mb-4 whitespace-nowrap">
             男の在り方再構築プロジェクト
           </p>
           <h1 className="font-noto text-4xl md:text-6xl font-light text-offwhite leading-tight tracking-widest mb-8">

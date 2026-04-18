@@ -58,7 +58,7 @@ export default function StageMap() {
         <div className="h-px flex-1 bg-gold/20" />
       </div>
 
-      <h2 className="font-noto text-3xl md:text-4xl font-light text-offwhite tracking-widest leading-tight mb-4">
+      <h2 className="font-noto text-2xl md:text-4xl font-light text-offwhite tracking-tight leading-tight mb-4">
         テクニックから在り方へ。<br />あなたは今、どの段階にいますか？
       </h2>
       <p className="font-cormorant italic text-muted text-xl tracking-wide mb-16">
@@ -128,7 +128,7 @@ export default function StageMap() {
 
       {/* Gold-bordered message block */}
       <div className="border border-gold/40 p-6 md:p-8">
-        <p className="font-noto text-offwhite/80 text-sm leading-relaxed tracking-wider">
+        <p className="font-noto text-offwhite/80 text-sm leading-relaxed tracking-normal">
           どのステージにいても、このプロジェクトは対応しています。<br />
           基礎のテクニックから、選ばれ続ける構造まで。<br />
           あなたの現在地から始められます。

@@ -7,7 +7,7 @@ export default function Problem() {
         <div className="h-px flex-1 bg-gold/20" />
       </div>
 
-      <h2 className="font-noto text-3xl md:text-4xl font-light text-offwhite tracking-widest leading-tight mb-4">
+      <h2 className="font-noto text-2xl md:text-4xl font-light text-offwhite tracking-tight leading-tight mb-4">
         なぜテクニックだけでは<br />限界があるのか
       </h2>
       <p className="font-cormorant italic text-muted text-xl tracking-wide mb-16">
