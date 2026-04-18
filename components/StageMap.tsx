@@ -58,7 +58,7 @@ export default function StageMap() {
         <div className="h-px flex-1 bg-gold/20" />
       </div>
 
-      <h2 className="font-noto text-2xl md:text-4xl font-light text-offwhite tracking-tight leading-tight mb-4">
+      <h2 className="font-noto text-xl md:text-4xl font-light text-offwhite tracking-tight leading-tight mb-4">
         テクニックから在り方へ。<br />あなたは今、どの段階にいますか？
       </h2>
       <p className="font-cormorant italic text-muted text-xl tracking-wide mb-16">
@@ -83,7 +83,7 @@ export default function StageMap() {
                 <p className="font-cormorant italic text-sm tracking-widest mb-1 text-gold/60">
                   {stage.en}
                 </p>
-                <p className="font-noto text-base font-light tracking-widest mb-4 text-offwhite/80">
+                <p className="font-noto text-sm md:text-base font-light tracking-tight md:tracking-widest mb-4 text-offwhite/80">
                   {stage.ja}
                 </p>
                 <p className="font-noto text-sm leading-relaxed tracking-wider whitespace-pre-line text-offwhite/55">
@@ -128,9 +128,9 @@ export default function StageMap() {
 
       {/* Gold-bordered message block */}
       <div className="border border-gold/40 p-6 md:p-8">
-        <p className="font-noto text-offwhite/80 text-sm leading-relaxed tracking-normal">
+        <p className="font-noto text-offwhite/80 text-xs md:text-sm leading-relaxed tracking-normal">
           どのステージにいても、このプロジェクトは対応しています。<br />
-          基礎のテクニックから、選ばれ続ける構造まで。<br />
+          基礎のテクニックから、選ばれ続ける在り方まで。<br />
           あなたの現在地から始められます。
         </p>
       </div>
