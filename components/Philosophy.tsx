@@ -42,16 +42,10 @@ export default function Philosophy() {
           </div>
         </div>
 
-        {/* matchapp + line-shot: 実績スクリーンショット */}
-        <div className="grid md:grid-cols-2 gap-4 mb-16">
-          <div className="relative aspect-[2/3] border border-gold/20 bg-[#0d0d0d]">
+        {/* matchapp: 実績スクリーンショット */}
+        <div className="flex justify-center mb-16">
+          <div className="relative w-full max-w-sm aspect-[2/3] border border-gold/20 bg-[#0d0d0d]">
             <Image src="/matchapp.png" alt="マッチングアプリ実績" fill className="object-contain" />
-            <div className="absolute bottom-4 left-4">
-              <p className="font-noto text-offwhite/70 text-xs tracking-wider">※モザイク処理済み</p>
-            </div>
-          </div>
-          <div className="relative aspect-[2/3] border border-gold/20 bg-[#0d0d0d]">
-            <Image src="/line-shot.png" alt="LINEでのやり取り実績" fill className="object-contain" />
             <div className="absolute bottom-4 left-4">
               <p className="font-noto text-offwhite/70 text-xs tracking-wider">※モザイク処理済み</p>
             </div>

@@ -27,6 +27,12 @@ export default function FinalCta() {
             40代だからこそ、今が最も深く変われるタイミングだ。
           </p>
 
+          {/* セッション案内動画 */}
+          <div className="mb-12 border border-gold/20 bg-[#0a0a0a] p-4">
+            <p className="font-noto text-offwhite/60 text-xs tracking-widest mb-3">個別セッション案内動画</p>
+            <video src="/session.mp4" controls className="w-full" style={{ maxHeight: "400px" }} />
+          </div>
+
           <div className="flex justify-center">
             <a
               href={LINE_URL}
@@ -45,6 +51,19 @@ export default function FinalCta() {
           <p className="font-noto text-muted/40 text-xs text-center tracking-widest mt-6">
             ※ 10日間限定・先着20名様 ／ 勧誘・セールス一切なし
           </p>
+
+          <div className="mt-10 flex justify-center">
+            <a
+              href="/guidebook.pdf"
+              download
+              className="inline-flex items-center gap-3 border border-gold/40 text-gold font-noto text-sm tracking-widest px-8 py-4 hover:bg-gold/10 transition-colors duration-300"
+            >
+              <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 16.5v-12m0 12l-3.75-3.75M12 16.5l3.75-3.75M3 19.5h18" />
+              </svg>
+              無料ガイドブックをダウンロード（PDF）
+            </a>
+          </div>
         </div>
       </div>
     </section>

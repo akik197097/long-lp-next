@@ -76,6 +76,23 @@ export default function FiveElements() {
         ))}
       </div>
 
+      {/* 教育動画 */}
+      <div className="mb-16">
+        <p className="label-en tracking-widest mb-8">Education Videos</p>
+        <div className="space-y-8">
+          {[
+            { src: "/education1.mp4", title: "教育動画 1本目" },
+            { src: "/education2.mp4", title: "教育動画 2本目" },
+            { src: "/education3.mp4", title: "教育動画 3本目" },
+          ].map((v) => (
+            <div key={v.src} className="border border-gold/20 bg-[#0a0a0a] p-4">
+              <p className="font-noto text-offwhite/60 text-xs tracking-widest mb-3">{v.title}</p>
+              <video src={v.src} controls className="w-full" style={{ maxHeight: "400px" }} />
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* Element list */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 mb-16">
         {elements.map((el) => (
