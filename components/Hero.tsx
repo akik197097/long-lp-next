@@ -42,15 +42,28 @@ export default function Hero() {
             マッチングアプリ攻略から女性の扱い方まで、実践的なスキルを全て習得した上で、さらに上を目指す。男の価値を根本から変えるトータルサポート。
           </p>
 
-          <a
-            href="#problem"
-            className="inline-flex items-center gap-4 group"
-          >
-            <span className="font-noto text-bg text-sm tracking-widest bg-gold px-10 py-4 group-hover:bg-gold/90 transition-colors duration-300">
-              その理由を知る
-            </span>
-            <span className="text-gold group-hover:translate-x-1 transition-transform duration-300 font-cormorant italic text-xl">→</span>
-          </a>
+          <div className="flex flex-col sm:flex-row items-start gap-4">
+            <a
+              href="#problem"
+              className="inline-flex items-center gap-4 group"
+            >
+              <span className="font-noto text-bg text-sm tracking-widest bg-gold px-10 py-4 group-hover:bg-gold/90 transition-colors duration-300">
+                その理由を知る
+              </span>
+              <span className="text-gold group-hover:translate-x-1 transition-transform duration-300 font-cormorant italic text-xl">→</span>
+            </a>
+
+            <a
+              href="/guidebook.pdf"
+              download
+              className="inline-flex items-center gap-3 border border-gold/60 text-gold font-noto text-sm tracking-widest px-8 py-4 hover:bg-gold/10 transition-colors duration-300 group"
+            >
+              <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 16.5v-12m0 12l-3.75-3.75M12 16.5l3.75-3.75M3 19.5h18" />
+              </svg>
+              まずガイドブックを読む
+            </a>
+          </div>
         </div>
       </div>
 

@@ -25,6 +25,12 @@ export default function Problem() {
           追う男から追われる男への変身には、テクニックの習得と、その上にある在り方のバランスの両方が必要だ。
         </p>
       </div>
+
+      {/* 教育動画 1本目 */}
+      <div className="border border-gold/20 bg-[#0a0a0a] p-4">
+        <p className="font-noto text-offwhite/60 text-xs tracking-widest mb-3">教育動画 1本目</p>
+        <video src="/education1.mp4" controls className="w-full" style={{ maxHeight: "400px" }} />
+      </div>
     </section>
   );
 }

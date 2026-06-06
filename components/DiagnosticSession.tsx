@@ -1,9 +1,8 @@
 import Image from "next/image";
 
 const steps = [
-  { num: "01", title: "LINEで友達追加",    en: "Add on LINE",              text: "下のボタンからAKITOのLINEを友達追加してください。24時間以内に個別メッセージをお送りします。" },
-  { num: "02", title: "現状ヒアリング",    en: "Diagnostic Conversation",  text: "現在の状況・過去の経験・どこに壁を感じているか——LINEのやり取りを通じて、あなたの5軸の現状を診断します。" },
-  { num: "03", title: "個別フィードバック", en: "Personalized Feedback",    text: "診断結果をもとに、あなたが最初に取り組むべき軸と具体的なアクションをお伝えします。完全無料・勧誘なし。" },
+  { num: "01", title: "現状ヒアリング",    en: "Diagnostic Conversation",  text: "現在の状況・過去の経験・どこに壁を感じているか——事前アンケートにもとづいて、あなたの5軸の現状を診断します。" },
+  { num: "02", title: "個別フィードバック", en: "Personalized Feedback",    text: "診断結果をもとに、あなたが最初に取り組むべき軸と具体的なアクションをお伝えします。完全無料・勧誘なし。" },
 ];
 
 export default function DiagnosticSession() {
@@ -46,11 +45,11 @@ export default function DiagnosticSession() {
         </div>
 
         <p className="font-noto text-muted/60 text-center text-sm tracking-wider mb-16">
-          無料診断セッション——3つのステップで完結します。
+          無料診断セッション——2つのステップで完結します。
         </p>
 
         {/* Steps */}
-        <div className="grid md:grid-cols-3 gap-px bg-gold/10">
+        <div className="grid md:grid-cols-2 gap-px bg-gold/10">
           {steps.map((s) => (
             <div key={s.num} className="bg-[#0d0d0d] p-8 text-center">
               <p className="font-cormorant italic text-gold text-5xl opacity-30 mb-4">{s.num}</p>

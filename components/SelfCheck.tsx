@@ -113,6 +113,12 @@ export default function SelfCheck() {
         </div>
       )}
       {!allDone && <p className="font-noto text-muted/30 text-xs text-center tracking-widest mt-6">5軸すべてに回答すると診断結果が表示されます</p>}
+
+      {/* 教育動画 3本目 */}
+      <div className="mt-16 border border-gold/20 bg-[#0a0a0a] p-4">
+        <p className="font-noto text-offwhite/60 text-xs tracking-widest mb-3">教育動画 3本目</p>
+        <video src="/education3.mp4" controls className="w-full" style={{ maxHeight: "400px" }} />
+      </div>
     </section>
   );
 }
