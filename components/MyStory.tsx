@@ -113,15 +113,6 @@ export default function MyStory() {
         </p>
       </div>
 
-      {/* twoshot: 実績写真 */}
-      <div className="relative w-full h-56 md:h-72 mt-6 overflow-hidden border border-gold/20">
-        <Image src="/twoshot.png" alt="実績写真" fill className="object-cover object-center" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/70 to-transparent" />
-        <div className="absolute bottom-4 left-6">
-          <p className="font-noto text-offwhite/80 text-xs tracking-wider">※モザイク処理済み</p>
-        </div>
-      </div>
-
     </section>
   );
 }
