@@ -64,12 +64,6 @@ export default function DiagnosticSession() {
         <p className="font-noto text-muted/40 text-xs text-center tracking-widest mt-10">
           ※ 診断セッションは完全無料です。セールスや勧誘は一切行いません。
         </p>
-
-        {/* 建物 image */}
-        <div className="relative w-full h-56 md:h-72 mt-12 overflow-hidden border border-gold/20">
-          <Image src="/建物.png" alt="建物" fill className="object-cover object-center" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d]/50 to-transparent" />
-        </div>
       </div>
     </section>
   );

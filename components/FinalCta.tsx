@@ -52,6 +52,30 @@ export default function FinalCta() {
             ※ 10日間限定・先着20名様 ／ 勧誘・セールス一切なし
           </p>
 
+          {/* 特典画像 2列グリッド */}
+          <div className="mt-12">
+            <p className="font-noto text-offwhite/50 text-xs tracking-widest text-center mb-6">— 特典一覧 —</p>
+            <div className="grid grid-cols-2 gap-4 place-items-center max-w-xs mx-auto">
+              {[
+                "mbti.png",
+                "40meet.png",
+                "conversation.png",
+                "progresssheet.png",
+                "valuesheet.png",
+                "7daywork.png",
+                "habit.png",
+              ].map((img) => (
+                <img
+                  key={img}
+                  src={`/${img}`}
+                  alt={img.replace(".png", "").replace(".PNG", "")}
+                  width={150}
+                  style={{ width: "150px", height: "auto", display: "block" }}
+                />
+              ))}
+            </div>
+          </div>
+
           <div className="mt-10 flex justify-center">
             <a
               href="/guidebook.pdf"
