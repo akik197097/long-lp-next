@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const benefits = [
   {
     num: "01",
@@ -26,19 +24,16 @@ const benefits = [
 const tokutens = [
   {
     num: "05",
-    img: "/tokuten1.PNG",
     title: "男の在り方のバランス診断シート（50問）",
     sub: "自分の現在地を正確に測るカルテ",
   },
   {
     num: "06",
-    img: "/tokuten2.PNG",
     title: "在り方を整える7日間ワーク",
     sub: "「分かる」から「体感」へ",
   },
   {
     num: "07",
-    img: "/tokuten3.PNG",
     title: "追われる男の習慣リスト",
     sub: "日常から在り方のバランスを作り直す実践録",
   },
@@ -86,27 +81,21 @@ export default function Offer() {
         ))}
       </div>
 
-      {/* Tokuten 05–07: image cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-        {tokutens.map((t) => (
-          <div key={t.num} className="border border-gold/20 bg-[#0d0d0d] overflow-hidden group">
-            <div className="relative w-full aspect-[4/3] overflow-hidden">
-              <Image
-                src={t.img}
-                alt={t.title}
-                fill
-                className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d]/60 to-transparent" />
-              <span className="absolute top-3 left-3 font-cormorant italic text-gold/50 text-2xl leading-none">
-                {t.num}
-              </span>
-            </div>
-            <div className="p-5">
-              <p className="font-noto text-offwhite text-sm tracking-widest leading-relaxed mb-2">
+      {/* Tokuten 05–07 */}
+      <div className="space-y-0 mb-12">
+        {tokutens.map((t, i) => (
+          <div
+            key={t.num}
+            className={`flex items-start gap-8 py-7 ${i < tokutens.length - 1 ? "border-b border-gold/10" : ""} group`}
+          >
+            <span className="font-cormorant italic text-gold text-4xl opacity-30 shrink-0 w-12 leading-none group-hover:opacity-60 transition-opacity">
+              {t.num}
+            </span>
+            <div>
+              <p className="font-noto text-offwhite text-base tracking-widest mb-1 group-hover:text-offwhite/90 transition-colors">
                 {t.title}
               </p>
-              <p className="font-noto text-muted/55 text-xs tracking-wider">
+              <p className="font-noto text-muted/55 text-sm tracking-wider">
                 — {t.sub}
               </p>
             </div>
