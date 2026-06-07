@@ -80,6 +80,7 @@ export default function Offer() {
           </div>
         ))}
       </div>
+      <div className="border-b border-gold/10" />
 
       {/* Tokuten 05–07 */}
       <div className="space-y-0 mb-12">
