@@ -61,6 +61,15 @@ export default function DiagnosticSession() {
           ))}
         </div>
 
+        {/* valuesheet: 個別フィードバック下 */}
+        <div className="mt-12 flex flex-col items-center">
+          <img
+            src="/valuesheet.PNG"
+            alt="valuesheet"
+            style={{ width: "150px", height: "auto", display: "block" }}
+          />
+        </div>
+
         <p className="font-noto text-muted/40 text-xs text-center tracking-widest mt-10">
           ※ 診断セッションは完全無料です。セールスや勧誘は一切行いません。
         </p>

@@ -60,8 +60,6 @@ export default function FinalCta() {
                 "mbti.png",
                 "40meet.png",
                 "conversation.png",
-                "progresssheet.png",
-                "valuesheet.png",
                 "7daywork.png",
                 "habit.png",
               ].map((img) => (

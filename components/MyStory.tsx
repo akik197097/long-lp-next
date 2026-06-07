@@ -104,15 +104,6 @@ export default function MyStory() {
         </div>
       </div>
 
-      {/* Mission Statement */}
-      <div className="mt-16 border border-gold/30 p-8 md:p-10">
-        <p className="label-en mb-4">Mission</p>
-        <p className="font-noto text-offwhite text-base md:text-lg leading-loose tracking-widest">
-          私が本当に教えるのはノウハウだけではない。<br />
-          あなた自身の「男としての在り方」を作り直すプロジェクトだ。
-        </p>
-      </div>
-
       {/* twoshot: 実績写真 */}
       <div className="relative w-full h-56 md:h-72 mt-6 overflow-hidden border border-gold/20">
         <Image src="/twoshot.png" alt="実績写真" fill className="object-cover object-center" />
@@ -134,6 +125,16 @@ export default function MyStory() {
       <p className="font-noto mt-3 text-center italic" style={{ fontSize: "0.85rem", color: "#999999" }}>
         ※プライバシー保護のためモザイク処理をしていますが、実際にお付き合いした女性たちです。出会いからお付き合いまでの経緯は個別セッション時に詳しくお話しします。
       </p>
+
+      {/* Mission Statement */}
+      <div className="mt-16 border border-gold/30 p-8 md:p-10">
+        <p className="label-en mb-4">Mission</p>
+        <p className="font-noto text-offwhite text-base md:text-lg leading-loose tracking-widest">
+          私が本当に教えるのはノウハウだけではない。<br />
+          あなた自身の「男としての在り方」を作り直すプロジェクトだ。
+        </p>
+      </div>
+
 
     </section>
   );
