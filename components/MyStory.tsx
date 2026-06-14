@@ -42,7 +42,21 @@ export default function MyStory() {
       <p className="font-cormorant italic text-muted text-xl tracking-wide mb-6">
         "The journey that brought me here."
       </p>
-      <p className="font-noto text-muted/60 text-sm tracking-wider mb-16">— コーチ AKITO</p>
+      <p className="font-noto text-muted/60 text-sm tracking-wider mb-8">— コーチ AKITO</p>
+
+      {/* Profile photo */}
+      <div className="mb-16 flex flex-col items-center">
+        <div className="border border-gold/20 rounded-full overflow-hidden" style={{ width: "120px", height: "120px" }}>
+          <Image
+            src="/hero.jpeg"
+            alt="AKITO プロフィール"
+            width={120}
+            height={120}
+            className="object-cover object-top w-full h-full"
+          />
+        </div>
+        <p className="font-noto text-offwhite/60 text-xs tracking-widest mt-3">AKITO</p>
+      </div>
 
       {/* story1 image */}
       <div className="mb-16 flex flex-col items-center">

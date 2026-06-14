@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex flex-col justify-end overflow-hidden">
       {/* Full-bleed background image */}
       <Image
-        src="/hero.jpeg"
+        src="/bar.png"
         alt="AKITO"
         fill
         className="object-cover object-center"

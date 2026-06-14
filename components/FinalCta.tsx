@@ -33,6 +33,15 @@ export default function FinalCta() {
             <video src="/session.mp4" controls className="w-full" style={{ maxHeight: "400px" }} />
           </div>
 
+          {/* Cafe image — イメージ写真 */}
+          <div className="mb-10 overflow-hidden border border-gold/20">
+            <img
+              src="/cafe.png"
+              alt="カフェイメージ"
+              style={{ width: "100%", height: "auto", display: "block", maxHeight: "400px", objectFit: "cover" }}
+            />
+          </div>
+
           <div className="flex justify-center">
             <a
               href={LINE_URL}
