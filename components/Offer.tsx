@@ -104,6 +104,13 @@ export default function Offer() {
         ))}
       </div>
 
+      {/* Community paragraph */}
+      <div className="mt-10 mb-12 border-l border-gold/30 pl-6">
+        <p className="font-noto text-offwhite/60 text-base leading-loose tracking-wider">
+          ここから、路上での実践講習会、飲み会、勉強会、合宿、旅行会、ボイトレ会といった場が、自然に生まれていきます。楽しく切磋琢磨しながら、男として、人間として成長していく。これが、Evolution実践コミュニティの目指す形です。
+        </p>
+      </div>
+
       {/* Price */}
       <div className="mt-12 border border-gold/20 bg-[#0d0d0d] p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
         <div>

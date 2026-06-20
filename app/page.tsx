@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import PJVideoPlayer from "@/components/PJVideoPlayer";
 import Problem from "@/components/Problem";
 import StageMap from "@/components/StageMap";
 import Insight from "@/components/Insight";
@@ -21,6 +22,9 @@ export default function Home() {
       <FloatingCta />
       {/* ① HERO */}
       <Hero />
+
+      {/* 統合プロモーション動画 */}
+      <PJVideoPlayer />
 
       <SectionDivider />
 

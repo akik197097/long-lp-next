@@ -27,12 +27,6 @@ export default function FinalCta() {
             40代だからこそ、今が最も深く変われるタイミングだ。
           </p>
 
-          {/* セッション案内動画 */}
-          <div className="mb-12 border border-gold/20 bg-[#0a0a0a] p-4">
-            <p className="font-noto text-offwhite/60 text-xs tracking-widest mb-3">個別セッション案内動画</p>
-            <video src="/session.mp4" controls className="w-full" style={{ maxHeight: "400px" }} />
-          </div>
-
           {/* Cafe image — イメージ写真 */}
           <div className="mb-10 overflow-hidden border border-gold/20">
             <img

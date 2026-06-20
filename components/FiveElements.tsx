@@ -176,11 +176,6 @@ export default function FiveElements() {
         })}
       </div>
 
-      {/* 教育動画 2本目 */}
-      <div className="mt-16 border border-gold/20 bg-[#0a0a0a] p-4">
-        <p className="font-noto text-offwhite/60 text-xs tracking-widest mb-3">教育動画 2本目</p>
-        <video src="/education2.mp4" controls className="w-full" style={{ maxHeight: "400px" }} />
-      </div>
     </section>
   );
 }
